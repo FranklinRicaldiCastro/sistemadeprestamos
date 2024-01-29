@@ -1,0 +1,6 @@
+# Permite habiliar la sobre escritura
+RewriteEngine On
+# Permite ya no ver los directorios en la web
+Options All -Indexes
+# Regla que dice todo depsues de que venga despues de url (https://nombre_proyecto) despues de la nombre del proyecto se va ha permitir todos los caracteres que estan dentro de los corchetes
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1

@@ -4,5 +4,4 @@
 
     $plantilla = new vistasControlador();
     $plantilla -> obtener_plantilla_controlador();
-
 ?>

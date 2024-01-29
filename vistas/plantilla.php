@@ -7,15 +7,32 @@
     <?php include "./vistas/include/link.php"; ?>
 </head>
 <body>
+	<?php 
+		$peticionAjax=false;
+		require_once "./controladores/vistasControlador.php";
+		$IV = new vistasControlador();
+
+		$vistas=$IV->obtener_vistas_controlador();
+
+		if($vistas=="login" || $vistas=="404") {
+			require_once "./vistas/contenidos/".$vistas."-view.php";
+		}else {
+	?>
 	<!-- Main container -->
 	<main class="full-box main-container">
 		<!-- Nav lateral -->
         <?php include "./vistas/include/navLateral.php"; ?>
 		<!-- Page content -->
 		<section class="full-box page-content">
-			<?php include "./vistas/include/nabBar.php";?>
+			<?php 
+				include "./vistas/include/nabBar.php";
+				include $vistas;
+			?>
 		</section>
 	</main>
-	<?php include "./vistas/include/script.php";?>
+	<?php 
+	}
+	include "./vistas/include/script.php";
+	?>
 </body>
 </html>

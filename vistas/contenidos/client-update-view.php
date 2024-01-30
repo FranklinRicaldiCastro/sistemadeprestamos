@@ -1,4 +1,3 @@
-<!-- Page header -->
 <div class="full-box page-header">
     <h3 class="text-left">
         <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR CLIENTE

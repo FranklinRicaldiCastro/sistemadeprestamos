@@ -1,4 +1,3 @@
-<!-- Page header -->
 <div class="full-box page-header">
     <h3 class="text-left">
         <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO
